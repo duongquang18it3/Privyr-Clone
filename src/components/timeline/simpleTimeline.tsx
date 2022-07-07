@@ -11,6 +11,9 @@ export const SimpleTimeline = (): JSX.Element => {
   return (
     <>
       <div className="timeline">
+	  <header className="timeline-header">
+					<span className="tag is-medium is-primary">Add</span>
+				</header>
         {/* <header className="timeline-header">
 					<span className="tag is-medium is-primary">Start</span>
 				</header>
