@@ -2,22 +2,16 @@ import React from "react";
 import { SimpleTimelineNode } from "./simpleTimelineNode";
 
 const dummyList = [
-	{ dateTime: "July 2022", title: "test node", content: "content text" },
-	{ dateTime: "July 2022", title: "test node", content: "content text" },
-	{ dateTime: "July 2022", title: "test node", content: "content text" },
-	{ dateTime: "July 2022", title: "test node", content: "content text" },
-	{ dateTime: "July 2022", title: "test node", content: "content text" },
-	{ dateTime: "July 2022", title: "test node", content: "content text" },
-	{ dateTime: "July 2022", title: "test node", content: "content text" },
-	{ dateTime: "July 2022", title: "test node", content: "content text" },
-	{ dateTime: "July 2022", title: "test node", content: "content text" },
+  { dateTime: "Today 8:00 AM", title: "Item", content: "Test content" },
+  { dateTime: "July 5 2022", title: "Item", content: "Test content" },
+  { dateTime: "July 2 2022", title: "Item", content: "Test content" },
 ];
 
 export const SimpleTimeline = (): JSX.Element => {
-	return (
-		<>
-			<div className="timeline">
-				{/* <header className="timeline-header">
+  return (
+    <>
+      <div className="timeline">
+        {/* <header className="timeline-header">
 					<span className="tag is-medium is-primary">Start</span>
 				</header>
 				<div className="timeline-item">
@@ -52,15 +46,15 @@ export const SimpleTimeline = (): JSX.Element => {
 					<span className="tag is-medium is-primary">End</span>
 				</div> */}
 
-				{dummyList.map((item, index) => (
-					<SimpleTimelineNode
-						key={index}
-						dateTime={item.dateTime}
-						title={`${item.title} ${index}`}
-						content={`${item.content} ${index}`}
-					/>
-				))}
-			</div>
-		</>
-	);
+        {dummyList.map((item, index) => (
+          <SimpleTimelineNode
+            key={index}
+            dateTime={item.dateTime}
+            title={`${item.title} ${index}`}
+            content={`${item.content} ${index}`}
+          />
+        ))}
+      </div>
+    </>
+  );
 };

@@ -12,7 +12,7 @@ const IndexPage = (): JSX.Element => {
 					bottomTabBarIndex={0}
 				>
 					<div className="column">
-						<p>Odoo frontend</p>
+						{/* <p>Odoo frontend</p> */}
 					</div>
 					<SimpleTimeline />
 				</Layout>

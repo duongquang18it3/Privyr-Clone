@@ -11,7 +11,7 @@ const ContentPage = (): JSX.Element => {
 					bottomTabBarIndex={1}
 				>
 					<div className="column">
-						<p>Content page</p>
+						<p>This is a Content page to test</p>
 					</div>
 				</Layout>
 			</main>

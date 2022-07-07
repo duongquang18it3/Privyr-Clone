@@ -10,7 +10,7 @@ const AccountPage = (): JSX.Element => {
 					bottomTabBarIndex={3}
 				>
 					<div className="column">
-						<p>Account page</p>
+						<p>This is a Account page to test</p>
 					</div>
 				</Layout>
 			</main>
